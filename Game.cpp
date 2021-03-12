@@ -225,7 +225,7 @@ public:
 
 // EFFECTS: prints correct way to input arguments if error occurs
 static int error_message() {
-    cout << "USAGE: Blackjack.exe NAME1 TYPE1 NAME2 TYPE2 (Dealer)" << endl;
+    cout << "USAGE: Blackjack.exe NAME1 Player NAME2 Dealer" << endl;
     return 1;
 }
     
@@ -238,7 +238,6 @@ int main(int argc, char* argv[]) {
         }
     
     // if types do not match Player or Dealer
-    //shit isn't working
     for (int j = 2; j < argc; j += 2) {
         if ((!strcmp(argv[j], "Player")) && (!strcmp(argv[j], "Dealer"))) {
             return error_message();
