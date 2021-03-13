@@ -20,4 +20,6 @@ Next, run the following line after filling in your preferred names:\
 
 - Add compatibility for more than 1 player which would mostly require some minor changes in the main function in Game.cpp. 
 
+- Clean up end messages declaring the winners and losers of the game
+
 - Add betting system 
