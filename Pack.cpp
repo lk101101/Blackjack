@@ -12,8 +12,8 @@ Pack::Pack() {
     // put every card of every suit + rank into pack
     for (int suit = 0; suit < 4; suit++) {
         for (int rank = 0; rank < 13; rank++) {
-            current_suit = SUIT_NAMES_BY_WEIGHT[suit];
-            current_rank = RANK_NAMES_BY_WEIGHT[rank];
+            current_suit = SUIT_ARRAY[suit];
+            current_rank = RANK_ARRAY[rank];
             
             pack.push_back(Card(current_rank, current_suit));
         }
