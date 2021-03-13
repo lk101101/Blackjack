@@ -64,12 +64,6 @@ private:
 // EFFECTS: prints name of Card to os
 ostream & operator<<(ostream &os, const Card &card);
 
-//EFFECTS comapres two cards and returns true if they have the same suit and rank
-bool operator==(const Card &card1, const Card &card2);
-
-//EFFECTS compares two cards and returns true if they are not the same card
-bool operator!=(const Card &card1, const Card &card2);
-
 // EFFECTS: puts all suits into an array
 constexpr const char* const SUIT_ARRAY[] = {
   Card::SUIT_SPADES,
