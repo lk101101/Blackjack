@@ -2,8 +2,7 @@
 ### Basic rules:
 Each participant (including the dealer) tries to get as close to 21 as possible without exceeding 21. \
 Cards 2-10 are worth their number value. Face cards are worth 10 points. Aces can be worth either 1 or 11 points. \
-To win, your score must either be equal to 21 or your score is greater than the score of the dealer. 
-
+To win, your score must either be 1. equal to 21 or 2. less than 21 but greater than the score of the dealer. 
 # Running Program
 Navigate to the folder where the Blackjack files are stored. In Terminal, use the below function to compile the files:\
 
@@ -18,8 +17,8 @@ Next, run the following line after filling in your preferred names:\
 
 - Implement way for player to choose whether ace is worth 1 or 11. Currently, aces count as 11 when the current score is less than or equal to 10 and count as 1 when the score is greater than 10. 
 
-- Add compatibility for more than 1 player which would mostly require some minor changes in the main function in Game.cpp. 
+- Add compatibility for more than 1 player.
 
-- Clean up end messages declaring the winners and losers of the game
+- Clean up end messages declaring the winners and losers of the game.
 
-- Add betting system 
+- Add betting system.
