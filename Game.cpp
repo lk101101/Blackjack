@@ -143,7 +143,7 @@ public:
                 // winning message
                 cout << player_type << " " << *players[player_num] << ", your score is equal to 21. You win! :)" << endl;
                 // losing message
-                cout << dealer_type << " " << *players[dealer_index << ", you lose :(" << endl;
+                cout << dealer_type << " " << *players[dealer_index] << ", you lose :(" << endl;
             }
         }
             
