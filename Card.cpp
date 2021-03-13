@@ -71,14 +71,4 @@ ostream & operator<<(ostream &os, const Card &card) {
     os << card.get_rank() << " of " << card.get_suit();
     return os;
 }
-    
-    // EFFECTS: compares two cards and returns true if they have the same suit and rank
-bool operator==(const Card &card1, const Card &card2) {
-    return card1.get_suit() == card2.get_suit() &&
-		card1.get_rank() == card2.get_rank();
-    }
-    
-    // EFFECTS: compares two cards and return true if they are not the same card
-bool operator!=(const Card &card1, const Card &card2) {
-    return !(card1 == card2);
-}
+ 
