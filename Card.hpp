@@ -70,17 +70,16 @@ bool operator==(const Card &card1, const Card &card2);
 //EFFECTS compares two cards and returns true if they are not the same card
 bool operator!=(const Card &card1, const Card &card2);
 
-// Suits in order from lowest suit to highest suit.
-constexpr const char* const SUIT_NAMES_BY_WEIGHT[] = {
+// EFFECTS: puts all suits into an array
+constexpr const char* const SUIT_ARRAY[] = {
   Card::SUIT_SPADES,
   Card::SUIT_HEARTS,
   Card::SUIT_CLUBS,
   Card::SUIT_DIAMONDS
 };
-const int NUM_SUITS = 4;
 
-// Ranks in order from lowest rank to highest rank.
-constexpr const char* const RANK_NAMES_BY_WEIGHT[] = {
+// EFFECTS: puts all ranks into an array
+constexpr const char* const RANK_ARRAY[] = {
   Card::RANK_TWO,
   Card::RANK_THREE,
   Card::RANK_FOUR,
@@ -95,6 +94,9 @@ constexpr const char* const RANK_NAMES_BY_WEIGHT[] = {
   Card::RANK_KING,
   Card::RANK_ACE
 };
+
+const int NUM_SUITS = 4;
+
 const int NUM_RANKS = 13;
 
 #endif /* Card_hpp */
