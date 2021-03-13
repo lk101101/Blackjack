@@ -141,9 +141,9 @@ public:
             
             } else if (player_score == 21 && dealer_score != 21) {
                 // winning message
-                cout << player_type << " " << *players[player_num] << ", your score is  equal to 21. You win! :)" << endl;
+                cout << player_type << " " << *players[player_num] << ", your score is equal to 21. You win! :)" << endl;
                 // losing message
-                cout << dealer_type << " " << *players[player_num] << ", you lose :(" << endl;
+                cout << dealer_type << " " << *players[dealer_index << ", you lose :(" << endl;
             }
         }
             
