@@ -20,25 +20,14 @@ Pack::Pack() {
     }
 }
 
-// EFFECTS: returns size of pack as an int
-int Pack::get_size() {
-    return static_cast<int> (pack.size());;
-}
-
 // EFFECTS: returns true if Pack size is equal to 52; returns false otherwise
 bool Pack::is_full() {
-    if (get_size() == FULL_PACK_SIZE) {
-        return true;
-    }
-    return false;
+    return pack.size() == FULL_PACK_SIZE;
 }
 
 // EFFECTS: returns true if Pack size is equal to 0; returns false otherwise
 bool Pack::is_empty() {
-    if (pack.empty()) {
-        return true;
-    }
-    return false;
+    return pack.empty();
 }
 
 // MODIFIES: order of Cards within Pack vector
