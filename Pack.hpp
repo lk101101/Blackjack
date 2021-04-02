@@ -17,9 +17,6 @@ public:
     // EFFECTS: initializes all 52 cards into pack
     Pack();
     
-    // EFFECTS: returns size of pack as an int
-    int get_size();
-    
     // EFFECTS: returns true if pack size is equal to 52; returns false otherwise
     bool is_full();
     
